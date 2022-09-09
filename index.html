@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container-principal">
+        <div class="entradas-div">
+            <form name="form-informacoes">
+                <label for="nome">Nome:</label>
+                <input id="nome" class="inputs" name="nome" type="text"/>
+                <label>Data:</label>
+                <input id="data" class="inputs" name="data" type="date"/>
+                <button id="btn-preencher">PREENCHER</button>
+            </form>
+        </div>
+        <div class="saidas-div">
+            <button id="btn-excluir">Excluir</button>
+            <div id="tabela-div">
+                <table>
+                    <thead class="table-thead">
+                        <tr>
+                            <th id="check-coluna"><input id="check-head" type="checkbox" onclick="selecionarTudo()"></th>
+                            <th>NOME</th>
+                            <th id="th-data">DATA</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><input id="check-1" class="check-table" type="checkbox"></td>
+                            <td>teste 2</td>
+                            <td>teste 3</td>
+                        </tr> 
+                        <tr>
+                            <td><input id="check-2" class="check-table" type="checkbox"></td>
+                            <td>teste 5</td>
+                            <td>teste 6</td>
+                        </tr>
+                        <tr>
+                            <td><input id="check-3" class="check-table" type="checkbox"></td>
+                            <td>teste 5</td>
+                            <td>teste 6</td>
+                        </tr>
+                        <tr>
+                            <td><input id="check-4" class="check-table" type="checkbox"></td>
+                            <td>teste 5</td>
+                            <td>teste 6</td>
+                        </tr>
+                        <tr>
+                            <td><input id="check-5" class="check-table" type="checkbox"></td>
+                            <td>teste 5</td>
+                            <td>teste 6</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
